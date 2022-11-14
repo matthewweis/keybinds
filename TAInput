@@ -138,16 +138,16 @@ bShowSelectedInfo=true
 ;; InputAliases=(AliasName="CycleLeft",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="XboxTypeS_LeftShoulder"),ButtonFontMarkupString="LEFT SHOULDER"))
 ;; InputAliases=(AliasName="CycleRight",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="XboxTypeS_RightShoulder"),ButtonFontMarkupString="RIGHT SHOULDER"))
 ;; InputAliases=(AliasName="AnyKey",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="*"),ButtonFontMarkupString="ANY KEY"))
-InputAliases=(AliasName="Accept",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Enter"),ButtonFontMarkupString="ACCEPT"))
-InputAliases=(AliasName="Cancel",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Escape"),ButtonFontMarkupString="CANCEL"))
+;; InputAliases=(AliasName="Accept",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Enter"),ButtonFontMarkupString="ACCEPT"))
+;; InputAliases=(AliasName="Cancel",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Escape"),ButtonFontMarkupString="CANCEL"))
 ;; InputAliases=(AliasName="Conditional1",PlatformInputKeys[1]=(InputKeyData=(InputKeyName="XboxTypeS_X"),ButtonFontMarkupString="X BUTTON"))
 ;; InputAliases=(AliasName="Conditional2",PlatformInputKeys[1]=(InputKeyData=(InputKeyName="XboxTypeS_Y"),ButtonFontMarkupString="Y BUTTON"))
 ;; InputAliases=(AliasName="Start",PlatformInputKeys[1]=(InputKeyData=(InputKeyName="XboxTypeS_Start"),ButtonFontMarkupString="START"))
 ;; InputAliases=(AliasName="Back",PlatformInputKeys[1]=(InputKeyData=(InputKeyName="XboxTypeS_Back"),ButtonFontMarkupString="BACK"))
-InputAliases=(AliasName="ShiftUp",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Subtract"),ButtonFontMarkupString="SUBTRACT"))
-InputAliases=(AliasName="ShiftDown",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Add"),ButtonFontMarkupString="ADD"))
-InputAliases=(AliasName="ShiftUpPage",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="PageUp"),ButtonFontMarkupString="PAGEUP"))
-InputAliases=(AliasName="ShiftDownPage",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="PageDown"),ButtonFontMarkupString="PAGEDOWN"))
+;; InputAliases=(AliasName="ShiftUp",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Subtract"),ButtonFontMarkupString="SUBTRACT"))
+;; InputAliases=(AliasName="ShiftDown",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="Add"),ButtonFontMarkupString="ADD"))
+;; InputAliases=(AliasName="ShiftUpPage",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="PageUp"),ButtonFontMarkupString="PAGEUP"))
+;; InputAliases=(AliasName="ShiftDownPage",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="PageDown"),ButtonFontMarkupString="PAGEDOWN"))
 ;; InputAliases=(AliasName="Defaults",PlatformInputKeys[1]=(InputKeyData=(InputKeyName="XboxTypeS_LeftTrigger"),ButtonFontMarkupString="LEFT TRIGGER"))
 ;; InputAliases=(AliasName="MouseLeft",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="LeftMouseButton"),ButtonFontMarkupString="LEFT MOUSE"))
 ;; InputAliases=(AliasName="MouseRight",PlatformInputKeys[0]=(InputKeyData=(InputKeyName="RightMouseButton"),ButtonFontMarkupString="RIGHT MOUSE"))
@@ -211,176 +211,152 @@ PCBindings=( Action="ThrottleForward", Key="W" )
 PCBindings=( Action="ThrottleReverse", Key="S" )
 
 ;;         [  D  ] :: STEER RIGHT
-PCBindings=( Action="SteerRight",      Key="D" )
+PCBindings=( Action="SteerRight", Key="D" )
 
 ;;         [  A  ] :: STEER LEFT
-PCBindings=( Action="SteerLeft",       Key="A" )
+PCBindings=( Action="SteerLeft", Key="A" )
 
 ; air stall (https://www.reddit.com/r/RocketLeague/comments/agbhtj/comment/ee4xlvj)
 ;;         [  G  ] :: AIR STALL (CUSTOM)
 PCBindings=( Action="RollLeft", Key="G" )
 PCBindings=( Action="YawRight", Key="G" )
-PCBindings=( Action="Jump",			Key="G" )
+PCBindings=( Action="Jump", Key="G" )
 
 ;;         [  H  ] :: AIR STALL (CUSTOM) (alternative implementation)
 ;; PCBindings=( Action="RollRight", Key="G" )
-;; PCBindings=( Action="YawLeft",   Key="G" )
-;; PCBindings=( Action="Jump",		  Key="G" )
+;; PCBindings=( Action="YawLeft", Key="G" )
+;; PCBindings=( Action="Jump", Key="G" )
 
 ;;         [  E  ] :: AIR STEER RIGHT
-PCBindings=( Action="YawRight",     Key="E" )
-PCBindings=( Action="YawRight",     Key="O" )
+PCBindings=( Action="YawRight", Key="E" )
+PCBindings=( Action="YawRight", Key="O" )
 
 ;;         [  Q  ] :: AIR STEER LEFT
-PCBindings=( Action="YawLeft",      Key="Q" )
-PCBindings=( Action="YawLeft",      Key="U" )
+PCBindings=( Action="YawLeft", Key="Q" )
+PCBindings=( Action="YawLeft", Key="U" )
 
 ;;         [  K  ] :: AIR PITCH UP
-PCBindings=( Action="PitchUp",      Key="K" )
+PCBindings=( Action="PitchUp", Key="K" )
 
 ;;         [  I  ] :: AIR PITCH DOWN
-PCBindings=( Action="PitchDown",    Key="I" )
+PCBindings=( Action="PitchDown", Key="I" )
 
 ;;         [  L  ] :: AIR ROLL RIGHT
-PCBindings=( Action="RollRight",    Key="L" )
+PCBindings=( Action="RollRight", Key="L" )
 
 ;;         [  J  ] :: AIR ROLL LEFT
-PCBindings=( Action="RollLeft",     Key="J" )
+PCBindings=( Action="RollLeft", Key="J" )
 
 ;;       [  Two  ] :: FLIP FORWARD (CUSTOM)
-PCBindings=( Action="PitchDown",    Key="Two")
-PCBindings=( Action="Jump",         Key="Two")
-PCBindings=( Action="Jump",         Key="Two")
-PCBindings=( Action="PitchDown",    Key="Two")
+PCBindings=( Action="PitchDown", Key="Two")
+PCBindings=( Action="Jump", Key="Two")
+
+       [  Eight  ] :: FLIP FORWARD (CUSTOM)
+PCBindings=( Action="PitchDown", Key="Eight")
+PCBindings=( Action="Jump", Key="Eight")
 
 ;;         [  X  ] :: FLIP BACKWARDS (CUSTOM)
-PCBindings=( Action="PitchUp",      Key="X" )
-PCBindings=( Action="Jump",         Key="X" )
-PCBindings=( Action="Jump",         Key="X" )
-PCBindings=( Action="PitchUp",      Key="X" )
+PCBindings=( Action="PitchUp", Key="X" )
+PCBindings=( Action="Jump", Key="X" )
 
 ;;         [  R  ] :: FLIP RIGHT (CUSTOM)
-PCBindings=( Action="RollRight",    Key="R" )
-PCBindings=( Action="Jump",         Key="R" )
-PCBindings=( Action="Jump",         Key="R" )
-PCBindings=( Action="RollRight",    Key="R" )
+PCBindings=( Action="RollRight", Key="R" )
+PCBindings=( Action="Jump", Key="R" )
 
 ;;         [  P  ] :: FLIP RIGHT (CUSTOM)
-PCBindings=( Action="RollRight      Key="P" )
-PCBindings=( Action="Jump",         Key="P" )
-PCBindings=( Action="Jump",         Key="P" )
-PCBindings=( Action="RollRight",    Key="P" )
-
-;;[  Apostrophe  ] :: FLIP RIGHT (CUSTOM)
-PCBindings=( Action="RollRight",    Key="Apostrophe" )
-PCBindings=( Action="Jump",         Key="Apostrophe" )
-PCBindings=( Action="Jump",         Key="Apostrophe" )
-PCBindings=( Action="RollRight",    Key="Apostrophe" )
-
-;;         [  R  ] :: FLIP RIGHT (CUSTOM)
-PCBindings=( Action="RollRight",    Key="R" )
-PCBindings=( Action="Jump",         Key="R" )
-PCBindings=( Action="Jump",         Key="R" )
-PCBindings=( Action="RollRight",    Key="R" )
+PCBindings=( Action="RollRight", Key="P" )
+PCBindings=( Action="Jump", Key="P" )
 
 ;;       [  Tab  ] :: FLIP LEFT (CUSTOM)
-PCBindings=( Action="RollLeft",     Key="Tab" )
-PCBindings=( Action="Jump",         Key="Tab" )
-PCBindings=( Action="Jump",         Key="Tab" )
-PCBindings=( Action="RollLeft",     Key="Tab" )
+PCBindings=( Action="RollLeft", Key="Tab" )
+PCBindings=( Action="Jump", Key="Tab" )
 
 ;;         [  Y  ] :: FLIP LEFT (CUSTOM)
-PCBindings=( Action="RollLeft",     Key="Y" )
-PCBindings=( Action="Jump",         Key="Y" )
-PCBindings=( Action="Jump",         Key="Y" )
-PCBindings=( Action="RollLeft",     Key="Y" )
-
-;;         [  H  ] :: FLIP LEFT (CUSTOM)
-PCBindings=( Action="RollLeft",     Key="H" )
-PCBindings=( Action="Jump",         Key="H" )
-PCBindings=( Action="Jump",         Key="H" )
-PCBindings=( Action="RollLeft",     Key="H" )
+PCBindings=( Action="RollLeft", Key="Y" )
+PCBindings=( Action="Jump", Key="Y" )
 
 ;;       [  One  ] :: FLIP FORWARD+LEFT (CUSTOM)
-PCBindings=( Action="PitchDown",    Key="One" )
-PCBindings=( Action="YawLeft",      Key="One" )
-PCBindings=( Action="Jump",         Key="One" )
-PCBindings=( Action="Jump",         Key="One" )
-PCBindings=( Action="YawLeft",      Key="One" )
-PCBindings=( Action="PitchDown",    Key="One" )
+PCBindings=( Action="PitchDown", Key="One" )
+PCBindings=( Action="YawLeft", Key="One" )
+PCBindings=( Action="Jump", Key="One" )
+
+;;     [  Seven  ] :: FLIP FORWARD+LEFT (CUSTOM)
+PCBindings=( Action="PitchDown", Key="Seven" )
+PCBindings=( Action="YawLeft", Key="Seven" )
+PCBindings=( Action="Jump", Key="Seven" )
 
 ;;     [  Three  ] :: FLIP FORWARD+RIGHT (CUSTOM)
-PCBindings=( Action="PitchDown",    Key="Three" )
-PCBindings=( Action="YawRight",     Key="Three" )
-PCBindings=( Action="Jump",         Key="Three" )
-PCBindings=( Action="Jump",         Key="Three" )
-PCBindings=( Action="YawRight",     Key="Three" )
-PCBindings=( Action="PitchDown",    Key="Three" )
+PCBindings=( Action="PitchDown", Key="Three" )
+PCBindings=( Action="YawRight", Key="Three" )
+PCBindings=( Action="Jump", Key="Three" )
 
-;;         [  Z  ] :: FLIP BACKWARDS+LEFT (CUSTOM)
-PCBindings=( Action="PitchUp",      Key="Z" )
-PCBindings=( Action="YawLeft",      Key="Z" )
-PCBindings=( Action="Jump",         Key="Z" )
-PCBindings=( Action="Jump",         Key="Z" )
-PCBindings=( Action="YawLeft",      Key="Z" )
-PCBindings=( Action="PitchUp",      Key="Z" )
+;;     [  Nine  ] :: FLIP FORWARD+RIGHT (CUSTOM)
+PCBindings=( Action="PitchDown", Key="Nine" )
+PCBindings=( Action="YawRight", Key="Nine" )
+PCBindings=( Action="Jump", Key="Nine" )
 
-;;         [  C  ] :: Flip BACKWARDS+RIGHT (CUSTOM)
-PCBindings=( Action="PitchUp",      Key="C" )
-PCBindings=( Action="YawRight",     Key="C" )
-PCBindings=( Action="Jump",         Key="C" )
-PCBindings=( Action="Jump",         Key="C" )
-PCBindings=( Action="YawRight",     Key="C" )
-PCBindings=( Action="PitchUp",      Key="C" )
+;;        [  Z  ] :: FLIP BACKWARDS+LEFT (CUSTOM)
+PCBindings=( Action="PitchUp", Key="Z" )
+PCBindings=( Action="YawLeft", Key="Z" )
+PCBindings=( Action="Jump", Key="Z" )
+
+;;        [  C  ] :: Flip BACKWARDS+RIGHT (CUSTOM)
+PCBindings=( Action="PitchUp", Key="C" )
+PCBindings=( Action="YawRight", Key="C" )
+PCBindings=( Action="Jump", Key="C" )
 
 ;;  [  CapsLock  ] :: Boost
-PCBindings=( Action="Boost",             Key="CapsLock" )
+PCBindings=( Action="Boost", Key="CapsLock" )
 
 ;; [  Semicolon  ] :: Boost (alternative bind)
-PCBindings=( Action="Boost",             Key="Semicolon" )
+PCBindings=( Action="Boost", Key="Semicolon" )
 
 ;;  [  Spacebar  ] :: Jump
-PCBindings=( Action="Jump",              Key="Spacebar" )
+PCBindings=( Action="Jump", Key="Spacebar" )
 
 ;; [  LeftShift  ] :: Drift
-PCBindings=( Action="Handbrake",         Key="LeftShift" )
+PCBindings=( Action="Handbrake", Key="LeftShift" )
 
 ;;         [  V  ] :: Ball Cam
-PCBindings=( Action="SecondaryCamera",   Key="V"  )
+PCBindings=( Action="SecondaryCamera", Key="V"  )
 
-;; READY
-PCBindings=( Action="ReadyUp",           Key="T" )
+;;         [  R  ] :: Ready Up
+PCBindings=( Action="ReadyUp", Key="R" )
 
-;; LOOK BEHIND
-PCBindings=( Action="RearCamera",        Key="H" )
+;;         [  H  ] :: Look Backwards
+PCBindings=( Action="RearCamera", Key="H" )
 
 ;;
 PCBindings=( Action="ToggleMidGameMenu", Key="Escape" )
-PCBindings=( Action="ToggleScoreboard",  Key="T" )
-PCBindings=( Action="PostMatchRequeue",  Key="T" )
+PCBindings=( Action="ToggleScoreboard", Key="T" )
+PCBindings=( Action="PostMatchRequeue", Key="T" )
 
-PCBindings=( Action="ChatPreset1",       Key="F5" )
-PCBindings=( Action="ChatPreset2",       Key="F6" )
-PCBindings=( Action="ChatPreset3",       Key="F7" )
-PCBindings=( Action="ChatPreset4",       Key="F8" )
+;; TODO
+;; PCBindings=( Action="ChatPreset1", Key="F5" )
+;; PCBindings=( Action="ChatPreset2", Key="F6" )
+;; PCBindings=( Action="ChatPreset3", Key="F7" )
+;; PCBindings=( Action="ChatPreset4", Key="F8" )
 
 ;; FREEPLAY
-
-PCBindings=( Action="FreeplayBallInFront",  Key="F1" )
-PCBindings=( Action="FreeplayBallOnCar",    Key="F2" )
+PCBindings=( Action="FreeplayBallInFront", Key="F1" )
+PCBindings=( Action="FreeplayBallOnCar", Key="F2" )
 PCBindings=( Action="FreeplayRedirectPass", Key="F3" )
-PCBindings=( Action="FreeplayPopBallUp",    Key="F4" )
-PCBindings=( Action="FreeplayDefendShot",   Key="F5" )
+PCBindings=( Action="FreeplayPopBallUp", Key="F4" )
+PCBindings=( Action="FreeplayDefendShot", Key="F5" )
 
-
+;; TODO
 PCBindings=( Action="TrainingOpenShotSelectionMenu", Key="Six" )
-PCBindings=( Action="TrainingPreviousShot",          Key="Seven" )
-PCBindings=( Action="TrainingNextShot",              Key="Eight" )
-PCBindings=( Action="TrainingToggleShuffle",         Key="Nine" )
-PCBindings=( Action="TrainingMirrorShot",            Key="Zero" )
-PCBindings=( Action="TutorialHelper",                Key="Minus" )
+PCBindings=( Action="TrainingPreviousShot", Key="Seven" )
+PCBindings=( Action="TrainingNextShot", Key="Eight" )
+PCBindings=( Action="TrainingToggleShuffle", Key="Nine" )
+PCBindings=( Action="TrainingMirrorShot", Key="Zero" )
+PCBindings=( Action="TutorialHelper", Key="Minus" )
 
-;; KEYBIND STRINGS
+;;
+;; =================================================
+;; KEYBIND STRINGS (non-exhaustive work in progress)
+;; =================================================
+;;
 
 ;; [ Special Keys ]
 ;; Key="Escape"
@@ -452,7 +428,12 @@ PCBindings=( Action="TutorialHelper",                Key="Minus" )
 ;; Key="Eight"
 ;; Key="Nine"
 
-;; [ Unbound Actions ] @todo("make exhaustive")
+;;
+;; =================================================
+;; UNBOUND ACTIONS (non-exhaustive work in progress)
+;; =================================================
+;;
+
 PCBindings=( Action="LookUp" )
 PCBindings=( Action="LookDown" )
 PCBindings=( Action="LookRight" )
@@ -536,7 +517,11 @@ PCBindings=( Action="DanceMoveLeft" )
 PCBindings=( Action="DanceRaise" )
 PCBindings=( Action="DanceToggle" )
 
-;; [ Miscellaneous ]
+;;
+;; =============
+;; Miscellaneous
+;; =============
+;;
 
 [Standard ControlPreset_X]
 ;; DELETED
