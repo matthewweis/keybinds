@@ -249,9 +249,32 @@ PCBindings=( Action="PitchDown", Key="I" )
 
 ;;         [  L  ] :: AIR ROLL RIGHT
 PCBindings=( Action="RollRight", Key="L" )
-PCBindings=( Action="RollRight", Key="LeftAlt")
+
+;;         [  L  ] :: BOOST
+;; PCBindings=( Action="Boost", Key="LeftAlt" )
+
+
+;; ;; ;; fast speedflip kickoff (first jump)
+ (REMOVED)
+;; ;; PCBindings=( Action="Jump", Key="RightAlt" )
+;; ;; PCBindings=( Action="YawLeft", Key="RightAlt" )
+;; ;; PCBindings=( Action="SteerLeft", Key="RightAlt" )
+
+;; fast speedflip kickoff (second jump - must be canceled)
+PCBindings=( Action="PitchDown", Key="LeftAlt" )
+PCBindings=( Action="YawRight", Key="LeftAlt" )
+PCBindings=( Action="Jump", Key="LeftAlt" )
+;; fast speedflip kickoff (left) (second jump - must be canceled)
+;; assumes right alt has been bound to 5 in glorious software
+PCBindings=( Action="PitchDown", Key="Five" )
+PCBindings=( Action="YawLeft", Key="Five" )
+PCBindings=( Action="Jump", Key="Five" )
+
+;; PCBindings=( Action="RollRight", Key="LeftAlt")
 ;; auto accelerate when airrolling via alt
-PCBindings=( Action="ThrottleForward", Key="LeftAlt" )
+;; PCBindings=( Action="ThrottleForward", Key="LeftAlt" )
+
+
 
 ;;         [  J  ] :: AIR ROLL LEFT
 PCBindings=( Action="RollLeft", Key="J" )
@@ -280,7 +303,7 @@ PCBindings=( Action="ThrottleForward", Key="LeftControl" )
 PCBindings=( Action="PitchDown", Key="Two")
 PCBindings=( Action="Jump", Key="Two")
 
-       [  Eight  ] :: FLIP FORWARD (CUSTOM)
+;;     [  Eight  ] :: FLIP FORWARD (CUSTOM)
 PCBindings=( Action="PitchDown", Key="Eight")
 PCBindings=( Action="Jump", Key="Eight")
 
@@ -337,12 +360,32 @@ PCBindings=( Action="Jump", Key="C" )
 ;;  [  CapsLock  ] :: Boost
 PCBindings=( Action="Boost", Key="CapsLock" )
 
+;; CapsLock remap
+PCBindings=( Action="Boost", Key="Equals" )
+
 ;; [  Semicolon ] :: Boost (alternative bind)
 PCBindings=( Action="Boost", Key="Semicolon" )
+
+;; Try always accelerating when boosting for ~7% speed
+;; -- In a perfect world this does nothing because I'd optimally Throttle and Boost anyways
+;; -- Also this messes up ThrottleBackwards while accelerating... but is this ever necessary? Perhaps a few esoteric plays are easier with a non-feathered 7% decreased boost?
+;; HIGHLY EXPERIMENTAL!!!
+;; HIGHLY EXPERIMENTAL!!!
+;; HIGHLY EXPERIMENTAL!!!
+; REMOVED BECUASE SOME FLIP RESETS REQUIRE NO Throttle
+;; PCBindings=( Action="ThrottleForward", Key="Semicolon" )
+;; HIGHLY EXPERIMENTAL!!!
+;; HIGHLY EXPERIMENTAL!!!
+;; HIGHLY EXPERIMENTAL!!!
 
 ;; [   LeftAlt  ] :: Boost (alternative bind)
 ;; LeftAlt is TEMPORARILY REMAPPED TO Air Roll Right!
 ;; PCBindings=( Action="Boost", Key="LeftAlt" )
+
+
+;; [  Quote ] :: Boost (alternative bind)
+PCBindings=( Action="Boost", Key="Quote" )
+PCBindings=( Action="ThrottleForward", Key="Quote" )
 
 ;;  [  Spacebar  ] :: Jump
 PCBindings=( Action="Jump", Key="Spacebar" )
@@ -358,22 +401,40 @@ PCBindings=( Action="ReadyUp", Key="R" )
 
 ;;;;
 ;;;; CAMERA
+PCBindings=( Action="RearCamera", Key="H" )
 ;;;;
 
 ;; LOOK BEHIND
-PCBindings=( Action="RearCamera", Key="H" )
+;; RightAlt is nice with N or M to look around the ball
+;; PCBindings=( Action="RearCamera", Key="RightAlt" )
+
+
+
+;; Look Around Ball Left
+PCBindings=( Action="RearCamera", Key="Period" )
+PCBindings=( Action="SwivelLeft", Key="Period" )
+
+;; Look Around Ball Right
+PCBindings=( Action="RearCamera", Key="Slash" )
+PCBindings=( Action="SwivelRight", Key="Slash" )
+
+
+;; UNMAPPED FOR MOVEMENT KEYS
+;; LOOK DOWN
+PCBindings=( Action="SwivelDown", Key="B" )
 
 ;; LOOK UP
-PCBindings=( Action="SwivelUp", Key="B" )
+PCBindings=( Action="SwivelUp", Key="Comma" )
 
-;; LOOK DOWN
-PCBindings=( Action="SwivelDown", Key="RightAlt" )
-
+;; UNMAPPED FOR MOVEMENT KEYS
 ;; LOOK RIGHT
 PCBindings=( Action="SwivelRight", Key="M" )
 
+;; UNMAPPED FOR MOVEMENT KEYS
 ;; LOOK LEFT
 PCBindings=( Action="SwivelLeft", Key="N" )
+;; PCBindings=( Action="YawLeft", Key="N" )
+;; PCBindings=( Action="SteerLeft", Key="N" )
 
 ;;;
 ;;; MISC
@@ -413,12 +474,17 @@ PCBindings=( Action="TutorialHelper", Key="F11" )
 
 ;; EXPERIMENTAL
 
-;; air roll on a modifier key (works with Sticky Keys)
-PCBindings=( Action="RollRight", Key="RightShift" )
-PCBindings=( Action="Handbrake", Key="RightControl" )
-
 ;;PCBindings=( Action="Jump", Key="LeftAlt" )
-;;PCBindings=( Action="Jump", Key="Apostrophe" )
+;;PCBindings=( Action="Jump", Key="Quote" )
+
+;; MISC
+
+PCBindings=( Action="ResetTraining", Key="Backspace" )
+PCBindings=( Action="Chat", Key="Six")
+;; PCBindings=( Action="Chat", Key="Up")
+PCBindings=( Action="TeamChat", Key="Down")
+;; PCBindings=( Action="PartyChat", Key="Left")
+PCBindings=( Action="PartyChat", Key="Right")
 
 ;; KEYBIND STRINGS
 
@@ -429,7 +495,7 @@ PCBindings=( Action="Handbrake", Key="RightControl" )
 ;; Key="Semicolon"
 ;; Key="Tilde"
 ;; Key="Spacebar"
-;; Key="Apostrophe"
+;; Key="Quote"
 ;; Key="LeftBracket"
 ;; Key="RightBracket"
 
