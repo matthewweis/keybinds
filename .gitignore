@@ -1,0 +1,13 @@
+*~
+*.swp
+*.swo
+
+rl/TAGame/Cache
+rl/TAGame/Config/TARLBot.ini
+rl/TAGame/Config/TASystemSettings.ini
+rl/TAGame/Demos
+rl/TAGame/DemosEpic
+rl/TAGame/Logs
+rl/TAGame/SaveDataEpic
+rl/TAGame/Training/0000000000000000/Downloaded
+rl/TAGame/Training/0000000000000000/MyTraining

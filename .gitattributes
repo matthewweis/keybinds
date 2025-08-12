@@ -1,0 +1,6 @@
+* text=auto !eol
+*.txt text eol=lf
+*.json text eol=lf
+*.ahk text eol=crlf
+*.bat text eol=crlf
+*.ini text eol=crlf
